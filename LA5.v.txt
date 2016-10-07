@@ -83,13 +83,6 @@ reg [31:0] answer_temp11,answer_temp12,answer_temp13,answer_temp14,answer_temp15
 reg [31:0] x;
 reg [31:0] y;
 
-matrix_ROM set_value (
-  .clka(clk), // input clka
-  .addra(address), // input [4 : 0] addra
-  .douta(data_out) // output [31 : 0] douta
-);
-
-
 always@(posedge clk)
 begin
 
